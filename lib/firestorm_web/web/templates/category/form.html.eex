@@ -1,0 +1,10 @@
+<%= form_for @changeset, @action, [class: "new-category"], fn f -> %>
+  <div>
+    <label>
+      Title: <%= text_input f, :title %>
+      <%= error_tag f, :title %>
+    </label>
+  </div>
+
+  <%= submit "Create Category", class: "pure-button button-primary" %>
+<% end %>
